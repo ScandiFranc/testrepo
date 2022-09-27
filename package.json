@@ -1,0 +1,42 @@
+{
+    "name": "@scandiweb/template-theme",
+    "version": "1.0.0",
+    "license": "OSL-3.0",
+    "dependencies": {
+        "@scandipwa/scandipwa": "5.2.4",
+        "@scandipwa/scandipwa-scripts": "2.4.19",
+        "@scandipwa/eslint-config": "0.1.36",
+        "@tilework/mosaic": "0.1.4",
+        "@tilework/mosaic-craco": "0.0.5"
+    },
+    "scandipwa": {
+        "themeAlias": "Template",
+        "type": "theme",
+        "locales": {
+            "en_US": true
+        },
+        "parentTheme": "@scandipwa/scandipwa"
+    },
+    "scripts": {
+        "start": "scandipwa-scripts start",
+        "build": "scandipwa-scripts build",
+        "postinstall": "scandipwa-scripts link",
+        "postupdate": "scandipwa-scripts link"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "eslintConfig": {
+        "extends": "@scandipwa"
+    },
+    "proxy": "https://feteam-kdq-1639578177.readymage.com/"
+}
